@@ -1,0 +1,26 @@
+<h1>Listing slow_things</h1>
+<% sleep 1 %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @slow_things.each do |slow_thing| %>
+      <tr>
+        <td><%= slow_thing.name %></td>
+        <td><%= link_to 'Show', slow_thing %></td>
+        <td><%= link_to 'Edit', edit_slow_thing_path(slow_thing) %></td>
+        <td><%= link_to 'Destroy', slow_thing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Slow thing', new_slow_thing_path %>

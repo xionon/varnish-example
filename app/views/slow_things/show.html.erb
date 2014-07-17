@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+<% sleep 1 %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @slow_thing.name %>
+</p>
+
+<%= link_to 'Edit', edit_slow_thing_path(@slow_thing) %> |
+<%= link_to 'Back', slow_things_path %>
