@@ -38,4 +38,5 @@ gem 'spring',        group: :development
 
 gem 'foreman'
 gem 'puma'
-gem 'pry-byebug'
+gem 'pry-byebug', group: :development
+gem 'capistrano'
