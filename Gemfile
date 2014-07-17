@@ -37,6 +37,11 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'foreman'
-gem 'puma'
-gem 'pry-byebug', group: :development
-gem 'capistrano'
+gem 'unicorn'
+group :development do
+  gem 'pry-byebug', :require => false
+  gem 'capistrano', :require => false
+  gem 'capistrano-rails', :require => false
+  gem 'capistrano-unicorn-nginx', '~> 2.0', :require => false
+end
+
