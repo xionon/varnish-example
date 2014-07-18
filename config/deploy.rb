@@ -34,6 +34,10 @@ set :repo_url, 'git@github.com:xionon/varnish-example.git'
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
+# set :rvm1_ruby_version, "2.1.2"
+# before 'deploy', 'rvm1:install:rvm'
+# before 'deploy', 'rvm1:install:ruby'
+
 namespace :deploy do
 
   desc 'Restart application'

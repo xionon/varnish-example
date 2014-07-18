@@ -43,5 +43,6 @@ group :development do
   gem 'capistrano', :require => false
   gem 'capistrano-rails', :require => false
   gem 'capistrano-unicorn-nginx', '~> 2.0', :require => false
+  gem 'rvm1-capistrano3', require: false
 end
 
